@@ -23,7 +23,7 @@
         "titles" : "SiteCode",
         "datatype" : "string"
       }, {
-        "name" : "RefCode",
+        "name" : "referenceId",
         "titles" : "RefCode",
         "datatype" : "string"
       }, {
@@ -74,7 +74,46 @@
         "name" : "Weight",
         "titles" : "Weight",
         "datatype" : "string"
-      } ]
+      } ],
+      "foreignKeys": [
+          {
+            "columnReference": "referenceId",
+            "reference": {
+              "columnReference": "referenceId"
+            }
+          }
+      ]
+    }
+  },
+  {
+    "@context" : [ "http://www.w3.org/ns/csvw", {
+      "@language" : "en"
+    } ],
+    "rdfs:comment" : [ "inspired by https://www.w3.org/TR/2015/REC-tabular-data-model-20151217/" ],
+    "url" : "Data/NeoBat_Interactions_References.csv",
+    "dcterms:bibliographicCitation" : "Florez-Montero, G.L., Muylaert, R.L., Nogueira, M.R., Geiselman, C., Santana, S.E., Stevens, R.D., Tschapka, M., Rodrigues, F.A. and Mello, M.A.R. (2022), NeoBat Interactions: A data set of bat–plant interactions in the Neotropics. Ecology. Accepted Author Manuscript e3640. https://doi.org/10.1002/ecy.3640",
+    "delimiter" : ",",
+    "headerRowCount" : 1,
+    "null" : [ "" ],
+    "tableSchema" : {
+      "columns" : [ {
+        "name" : "referenceId",
+        "titles" : "RefCode",
+        "datatype" : "string"
+      }, {
+        "name" : "Author",
+        "titles" : "Author",
+        "datatype" : "string"
+      }, {
+        "name" : "Year",
+        "titles" : "Year",
+        "datatype" : "string"
+      }, {
+        "name" : "referenceCitation",
+        "titles" : "Reference",
+        "datatype" : "string"
+      }],
+      "primaryKey": "referenceId"
     }
   } ]
 }
