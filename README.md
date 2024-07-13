@@ -86,6 +86,6 @@ Florez-Montero GL, Muylaert RL, Geiselman C, Nogueira MR, Santana SE, Stevens RD
 
 ## Indexing
 
-[![GloBI Review by Elton](../../actions/workflows/review.yml/badge.svg)](../../actions/workflows/review.yml)[![GloBI](https://api.globalbioticinteractions.org/interaction.svg?accordingTo=globi:gflorezm/NeoBat_Interactions)](https://globalbioticinteractions.org/?accordingTo=globi:gflorezm/NeoBat_Interactions)
+[![GloBI Review by Elton](../../actions/workflows/review.yml/badge.svg)](../../actions/workflows/review.yml) [![GloBI](https://api.globalbioticinteractions.org/interaction.svg?accordingTo=globi:gflorezm/NeoBat_Interactions)](https://globalbioticinteractions.org/?accordingTo=globi:gflorezm/NeoBat_Interactions)
 
 This repository is configured to be indexed by Global Biotic Interactions (GloBI, https://globalbioticinteractions.org). 
